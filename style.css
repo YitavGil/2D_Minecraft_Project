@@ -1,0 +1,128 @@
+*{
+    font-family: fantasy;
+}
+
+/* homepage */
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vmin;
+    background-image: url(./imgs/menu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.logo {
+    background-image: url(./imgs/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 56.25rem;
+    height: 31.25rem;
+    z-index: 9999;
+}
+
+.start {
+    width: 10rem;
+    height: 2rem;
+    font-size: large;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color:royalblue;
+}
+
+.game-matrix-grid{
+    display: grid;
+    background-color: white;
+    width: 100vmin;
+    height: 100vmin;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);  
+}
+
+.sky{
+    background-color: lightblue;
+}
+
+.cloud{
+    background-color: white;
+}
+.grass{
+    background-color:yellow;
+    background-image:url(./imgs/grass.png);
+    background-size: contain;
+}
+
+.tree{
+background-image: url(./imgs/tree-leaves.png);
+background-size: contain;
+}
+
+.trunk{
+    background-image:url(./imgs/tree.png);
+    background-size: contain;
+}
+
+.rock{
+    background-image:url(./imgs/rock.png);
+    background-size: contain;
+}
+
+.ground{
+    background-image:url(./imgs/ground.jpg);
+    background-size: contain;
+}
+
+.bush{
+    background-image:url(./imgs/leaf.png);
+    background-size: contain;
+}
+
+.side-bar-flexColumn{
+    background-color: black;
+    width: 20vmin;
+    height: 100vmin;
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tool {
+    border: 2px solid white;
+    width: 80px;
+	height: 80px;
+    margin: 15px;
+}
+
+.pickaxe {
+    background-image: url(./imgs/pickaxe.png);
+    background-size: contain;
+}
+
+.shovel {
+    background-image:url(./imgs/shovel.png);
+    background-size: contain;
+}
+
+.axe {
+    background-image:url(./imgs/axe.png);
+    background-size: contain;
+}
+
+.inventory {
+    border: 2px solid white;
+    width: 40px;
+	height: 40px;
+}
