@@ -1,6 +1,4 @@
-*{
-    font-family: fantasy;
-}
+
 
 /* homepage */
 
@@ -28,16 +26,20 @@
 
 .start {
     width: 10rem;
-    height: 2rem;
+    height: 3rem;
     font-size: large;
 }
+
+/* Main game */
 
 .flex-container{
     display: flex;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background-color:royalblue;
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .game-matrix-grid{
@@ -49,42 +51,82 @@
     grid-template-rows: repeat(20, 1fr);  
 }
 
+
 .sky{
     background-color: lightblue;
+    border: 1px solid transparent;
+}
+
+.sky:hover {
+    border: 1px solid yellow;
 }
 
 .cloud{
     background-color: white;
+    border: 1px solid transparent;
+}
+
+.cloud:hover {
+    border: 1px solid yellow;
 }
 .grass{
-    background-color:yellow;
     background-image:url(./imgs/grass.png);
     background-size: contain;
+    border: 1px solid transparent;
+}
+
+.grass:hover {
+    border: 1px solid yellow;
 }
 
 .tree{
 background-image: url(./imgs/tree-leaves.png);
 background-size: contain;
+border: 1px solid transparent;
+}
+
+.tree:hover {
+    border: 1px solid yellow;
 }
 
 .trunk{
     background-image:url(./imgs/tree.png);
     background-size: contain;
+    border: 1px solid transparent;
+}
+
+.trunk:hover {
+    border: 1px solid yellow;
 }
 
 .rock{
     background-image:url(./imgs/rock.png);
     background-size: contain;
+    border: 1px solid transparent;
+}
+
+.rock:hover{
+    border: 1px solid yellow;
 }
 
 .ground{
     background-image:url(./imgs/ground.jpg);
     background-size: contain;
+    border: 1px solid transparent;
+}
+
+.ground:hover {
+    border: 1px solid yellow;
 }
 
 .bush{
     background-image:url(./imgs/leaf.png);
     background-size: contain;
+    border: 1px solid transparent;
+}
+
+.bush:hover{
+    border: 1px solid yellow;
 }
 
 .side-bar-flexColumn{
@@ -107,22 +149,72 @@ background-size: contain;
 }
 
 .pickaxe {
-    background-image: url(./imgs/pickaxe.png);
+    background-image: url(./imgs/pickaxe.png) ;
     background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
 }
 
 .shovel {
     background-image:url(./imgs/shovel.png);
     background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
 }
 
 .axe {
-    background-image:url(./imgs/axe.png);
+    background-image:url(./imgs/axe.png) ;
     background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
 }
 
 .inventory {
     border: 2px solid white;
     width: 40px;
 	height: 40px;
+    cursor: pointer;
+}
+
+.reset-btn {
+    margin: 1rem;
+    width: 100%;
+    height: 4vh;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.selected {
+    border: 1px solid yellow;
+}
+
+
+@media screen and (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .side-bar-flexColumn {
+        flex-direction: row;
+        width: 100%;
+        align-items: flex-start;
+        height: 10vh;
+    }
+
+    .tool {
+        border: 2px solid white;
+        width: 80px;
+        height: 30px;
+        margin: 15px;
+    }
+
+    .inventory {
+        width: 50px;
+	    height: 30px;
+        margin-top: 1rem;
+    }
+    .reset-btn {
+        height: 4vh;
+    }
+
 }
